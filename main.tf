@@ -5,13 +5,3 @@ module "ec2" {
   subnet_id     = var.subnet_id
 }
 
-
-terraform {
-  backend "remote" {
-    organization = "aayush8276"
-    workspaces {
-      name = "terraform-cloud-task1"
-    }
-  }
-}
-
